@@ -1,3 +1,4 @@
+Esta es la cabina
 Plataforma voto electrónico educativa
 =====================================
 
