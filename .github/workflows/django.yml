@@ -41,8 +41,8 @@ jobs:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           coverage-reports: decide/coverage.xml
   deploy:
-    runs-on: ubuntu-latest
-    steps:
+    runs-on:  ubuntu-latest
+    steps:  
     - uses: actions/checkout@v1
     - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
       with:
