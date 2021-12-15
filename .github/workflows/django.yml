@@ -5,13 +5,14 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-     strategy:
+    strategy:
       matrix:
-        pyversion: ['3.5','3.8']
-        pgversion: ['10.8','12']
+       pyversion: ['3.5','3.8']
+       pgversion: ['10.8','12']
     services:
       postgres:
-        image:postgres: ${{matrix.pgversion}}
+    
+    image:postgres: ${{matrix.pgversion}}
         env:
           POSTGRES_USER: decide
           POSTGRES_PASSWORD: decide
